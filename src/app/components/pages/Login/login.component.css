@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@400;500;700&display=swap");
+
+.text-orange {
+  color: #f86f03;
+}
+
+.text-title {
+  color: #f86f03;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.title-eto{
+  color: #f86f03;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-style: bold;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.subtitle-eto{
+  color: #f86f03;
+  font-family: "Poppins", sans-serif;
+  font-size: 2 rem;
+  font-style: bold;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.background-login {
+  min-height: 100vh;
+  background-color: #fff1f1;
+  background-image: url("/assets/img/login/background-login.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.form-group-custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 0.2rem;
+}
+
+
+.form-label-custom {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #202020;
+}
+
+.form-control-custom {
+  background-color: transparent;
+  border: rgb(210, 210, 210) 1px solid;
+  border-radius: 7px;
+  padding: 15px;
+  height: 2.5rem;
+  width: 100%;
+}
+
+.form-control-custom:focus {
+  border-color: rgb(210, 210, 210);
+}
+
+.form-control-custom.error {
+  border-color: #ff1216;
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+.border-3 {
+  border-width: 3px !important;
+}
+
+.border-orange {
+  border-color: #f86f03 !important;
+}
+
+
+.btn-primary{
+  padding: 10px;
+  background-color: #F86F03;
+  border-color: #F86F03;
+}
+
+.btn-primary:active{
+  background-color: #fd882d;
+  border-color: #fd882d;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin-left: 2px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-icon:hover {
+  background-color: #fbd6bb;
+}
+
+button:focus .btn-icon {
+  background-color: #fbd6bb;
+}
+
+.btn-icon span {
+  font-size: 1rem;
+}
+
+.rotate-animation {
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate-animation.rotating {
+  transform: rotate(360deg);
+}
+.button-fp {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.button-fp::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #f86f03;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.button-fp:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo-animation {
+  animation: slideInFromTop 1s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.login-animation {
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes moveContinuous {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(18%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(18%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rocket-animation {
+  animation: moveContinuous 5s linear infinite;
+}
